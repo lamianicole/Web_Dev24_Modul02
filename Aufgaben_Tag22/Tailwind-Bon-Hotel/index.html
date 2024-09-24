@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Bon Hotel</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-white">
+        <div class="mx-auto w-max my-2.5">
+            <img src="./assets/img/logo_header.png" alt="hotel logo">
+        </div>
+        <nav class="flex justify-center p-8 gap-x-8 text-orange-700 text-2xl">
+            <a href="#" class="hover:text-orange-300">Our Hotel</a>
+            <a href="#" class="hover:text-orange-300">Rooms & Rates</a>
+            <a href="#" class="hover:text-orange-300">Facilities</a>
+            <a href="#" class="hover:text-orange-300">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <!-- (anpassen: doch nur mit tailwind machen) -->
+            <div class="hero min-h-screen h-20"
+            style="background-image: url(./assets/img/hero_image.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">WELCOME TO BON HOTEL</h1>
+                    <p class="mb-5">Good people. Good thinking. Good feeling.</p>
+                    <button class="btn btn-primary">EXPLORE</button>
+                </div>
+            </div>
+        </div>
+    <section>
+        <article class="mx-auto w-max my-3.5">
+            <h2 class="text-orange-700 text-5xl">Facilities</h2>
+        </article>
+        <!-- richtige Anordnung anpassen, sonst über flex wie navbar -->
+        <article class="grid gap-4 grid-cols-5">
+            <img src="./assets/img/icon_kitchen.png" alt="icon kitchen">
+            <p>Kitchen</p>
+            <img src="./assets/img/icon_pool.png" alt="icon pool">
+            <p>Pool</p>
+            <img src="./assets/img/icon_wifi.png" alt="icon wifi">
+            <p>WiFi</p>
+            <img src="./assets/img/icon_fitness.png" alt="icon iron">
+            <p>Gym</p>
+            <img src="./assets/img/icon_taxi.png" alt="icon taxi">
+            <p>Taxi</p>
+        </article> 
+        <article class="mx-auto w-max my-3.5">
+            <h2 class="text-orange-700 text-5xl">Rooms & Rates</h2>
+        </article>
+        <section class="">
+            <div>bg-[url('./assets/img/standard_twin_room.png')] h-96 bg-cover bg-center bg-no-repeat"></div>
+            <h3>Standard Twin Room</h3>
+            <h3>Standard Room</h3>
+            <h3>Standard View Room</h3>
+            <h3>Deluxe Room</h3>
+
+
+            
+        </section>
+        </nav>
+    </section>
+    </main>
+</body>
+</html>
