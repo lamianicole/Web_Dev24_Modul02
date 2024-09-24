@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tailwind Bon Hotel</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -17,53 +16,100 @@
             <a href="#" class="hover:text-orange-300">Rooms & Rates</a>
             <a href="#" class="hover:text-orange-300">Facilities</a>
             <a href="#" class="hover:text-orange-300">Contact Us</a>
+            <!-- Lupe ist img?-->
         </nav>
     </header>
     <main>
-        <!-- (anpassen: doch nur mit tailwind machen) -->
-            <div class="hero min-h-screen h-20"
-            style="background-image: url(./assets/img/hero_image.png);">
-            <div class="hero-overlay bg-opacity-60"></div>
-            <div class="hero-content text-neutral-content text-center">
-                <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">WELCOME TO BON HOTEL</h1>
-                    <p class="mb-5">Good people. Good thinking. Good feeling.</p>
-                    <button class="btn btn-primary">EXPLORE</button>
+        <!-- Warum ist bg img trotzdem abgeschnitten oben?-->
+        <section class="bg-[url('./assets/img/hero_image.png')] h-96 bg-cover bg-center bg-no-repeat flex flex-col items-center justify-end pb-16">
+            <h1 class="text-5xl text-white font-light">WELCOME TO BON HOTEL</h1>
+            <p class="text-base text-white pt-4">Good people. Good thinking. Good feeling.</p>
+            <button class="text-white font-light text-sm py-2 px-14 bg-amber-400 hover:bg-amber-500 rounded mt-6">EXPLORE</button>            
+        </section>
+        <section>
+            <article class="mx-auto w-max my-3.5">
+                <h2 class="text-orange-700 text-4xl">Facilities</h2>
+            </article>
+        <section class="flex justify-around mb-16">
+            <div class="text-center">
+                <img src="./assets/img/icon_kitchen.png" alt="icon kitchen">
+                <p class="text-orange-700 text-1xl p-1">Kitchen</p>
+            </div>
+            <div class="text-center">
+                <img src="./assets/img/icon_pool.png" alt="icon pool">
+                <p class="text-orange-700 text-1xl p-1">Pool</p>
+            </div>
+            <div class="text-center">
+                <img src="./assets/img/icon_wifi.png" alt="icon wifi">
+                <p class="text-orange-700 text-1xl p-1">WiFi</p>
+            </div>
+            <div class="text-center">
+                <img src="./assets/img/icon_fitness.png" alt="icon fitness">
+                <p class="text-orange-700 text-1xl p-1">Gym</p>
+            </div>
+            <div class="text-center">
+                <img src="./assets/img/icon_taxi.png" alt="icon taxi">
+                <p class="text-orange-700 text-1xl p-1">Taxi</p>
+            </div>   
+        </section>
+        <article class="mx-auto w-max my-3.5">
+            <h2 class="text-orange-700 text-4xl">Rooms & Rates</h2>
+        </article>
+        <section class="grid grid-cols-2 gap-8 mx-auto w-3/5">
+            <div class="bg-[url('./assets/img/standard_twin_room.png')] h-80 bg-cover bg-center bg-no-repeat rounded flex flex-col items-center justify-end p-6">
+                <div>
+                    <h2 class="text-2xl text-white text-center">Standard Twin Room</h2>
+                    <button class="text-white font-light text-sm py-2 px-14 bg-amber-400 hover:bg-amber-500 rounded mt-6">Check Rates</button>
                 </div>
             </div>
-        </div>
-    <section>
-        <article class="mx-auto w-max my-3.5">
-            <h2 class="text-orange-700 text-5xl">Facilities</h2>
-        </article>
-        <!-- richtige Anordnung anpassen, sonst über flex wie navbar -->
-        <article class="grid gap-4 grid-cols-5">
-            <img src="./assets/img/icon_kitchen.png" alt="icon kitchen">
-            <p>Kitchen</p>
-            <img src="./assets/img/icon_pool.png" alt="icon pool">
-            <p>Pool</p>
-            <img src="./assets/img/icon_wifi.png" alt="icon wifi">
-            <p>WiFi</p>
-            <img src="./assets/img/icon_fitness.png" alt="icon iron">
-            <p>Gym</p>
-            <img src="./assets/img/icon_taxi.png" alt="icon taxi">
-            <p>Taxi</p>
-        </article> 
-        <article class="mx-auto w-max my-3.5">
-            <h2 class="text-orange-700 text-5xl">Rooms & Rates</h2>
-        </article>
-        <section class="">
-            <div>bg-[url('./assets/img/standard_twin_room.png')] h-96 bg-cover bg-center bg-no-repeat"></div>
-            <h3>Standard Twin Room</h3>
-            <h3>Standard Room</h3>
-            <h3>Standard View Room</h3>
-            <h3>Deluxe Room</h3>
-
-
-            
+            <div class="bg-[url('./assets/img/standard_room.png')] h-80 bg-cover bg-center bg-no-repeat rounded flex flex-col items-center justify-end p-6">
+                <div>
+                    <h2 class="text-2xl text-white text-center">Standard Room</h2>
+                    <button class="text-white font-light text-sm py-2 px-14 bg-amber-400 hover:bg-amber-500 rounded mt-6">Check Rates</button>
+                </div>
+            </div>
+            <div class="bg-[url('./assets/img/standard_view_room.png')] h-80 bg-cover bg-center bg-no-repeat rounded flex flex-col items-center justify-end p-6">
+                <div>
+                    <h2 class="text-2xl text-white text-center">Standard View Room</h2>
+                    <button class="text-white font-light text-sm py-2 px-14 bg-amber-400 hover:bg-amber-500 rounded mt-6">Check Rates</button>
+                </div>
+            </div>
+            <div class="bg-[url('./assets/img/deluxe_room.png')] h-80 bg-cover bg-center bg-no-repeat rounded flex flex-col items-center justify-end p-6">
+                <div>
+                    <h2 class="text-2xl text-white text-center">Deluxe Room</h2>
+                    <button class="text-white font-light text-sm py-2 px-14 bg-amber-400 hover:bg-amber-500 rounded mt-6">Check Rates</button>
+                </div>
+            </div>
         </section>
-        </nav>
-    </section>
+        </section>
+        <section class="flex flex-col items-center m-8">
+                <h2 class="text-orange-700 text-4xl">Get a room already!</h2>
+                <button class="text-white font-light text-sm py-2 px-14 bg-amber-400 hover:bg-amber-500 rounded mt-6">Book Now</button>
+        </section>
     </main>
+    <footer class="bg-black pb-24">
+        <div class="flex justify-between mx-auto w-3/4 pt-16">
+            <div>
+                <img src="./assets/img/logo_footer.png" alt="hotel logo dark">
+                <div class="pt-8">
+                    <p class="text-white font-semibold">Bon Hotels Head Office</p>
+                    <p class="text-white">+27 434 344 432</p>
+                    <p class="text-white">info@bonhotels.com</p>
+                </div>  
+            </div>
+            <nav class="flex flex-col gap-y-3">
+                <a class="text-white hover:text-orange-300" href="#">Our Hotels</a>
+                <a class="text-white hover:text-orange-300" href="#">Our Conferencing</a>
+                <a class="text-white hover:text-orange-300" href="#">Our Company</a>
+                <a class="text-white hover:text-orange-300" href="#">Hotel Design</a>
+                <a class="text-white hover:text-orange-300" href="#">Careers</a>
+            </nav>
+            <!-- <div class="mb-5">
+                <label for="email">Subcribe for Offers</label>
+                <input type="email" id="email" placeholder="your email" required />
+                <button class="text-white font-light text-sm py-2 px-14 bg-amber-400 hover:bg-amber-500 rounded mt-6">Subscribe Now</button>
+            </div> -->
+        </div>
+    </footer>
 </body>
 </html>
