@@ -6,7 +6,7 @@ const sendenBtn = document.querySelector('#sendenBtn') as HTMLInputElement;
 const output = document.querySelector('#output') as HTMLElement;
 console.log(output);
 
-// mit console.log als Erstes prüfen, ob Elemente vorhanden sind
+// mit console.log als Erstes prüfen, ob Elemente vorhanden sind. Achtung, Unterscheidung string/number!!
 console.log(inputNumber);
 console.log(5);
 
