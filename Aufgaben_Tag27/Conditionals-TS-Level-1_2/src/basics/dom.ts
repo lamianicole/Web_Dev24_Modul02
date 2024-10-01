@@ -18,16 +18,20 @@ if(sendenBtn){
         console.log("test");
         console.log(inputNumber.value);
         if(Number(inputNumber.value) <= 2){
-                console.log("Wetter ist schlecht");
+                console.log("Das Wetter ist schlecht");
                 output.textContent="Wetter ist schlecht"
         }
-        else if(Number(inputNumber.value) <= 5){
-                console.log("Wetter ist gut");
-                output.textContent="Wetter ist gut";      
+        else if(Number(inputNumber.value) <=5 ){
+                console.log("Das Wetter ist ok");
+                output.textContent="Das Wetter ist ok";      
         }
-        else if(Number(inputNumber.value) <= 8){
-            console.log("Wetter ist Knaller");
-            output.textContent="Wetter ist Knaller";
+        else if(Number(inputNumber.value) <= 7){
+            console.log("Das Wetter ist gut");
+            output.textContent="Das Wetter ist gut";
+        }
+        else if(Number(inputNumber.value) <= 10){
+            console.log("Das Wetter ist ein Traum. Raus mit dir!");
+            output.textContent="Das Wetter ist ein Traum. Raus mit dir!";
         }
     })
 }
