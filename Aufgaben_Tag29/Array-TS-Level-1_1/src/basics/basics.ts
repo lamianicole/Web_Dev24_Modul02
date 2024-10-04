@@ -158,23 +158,32 @@ console.log(oldHollywoodActors);
 let concatArray: string[] = []
 concatArray.concat(oldHollywoodActors);
 console.log(concatArray);
-// hier kommt aber nur leere eckige klammer raus, warum?
+// hier kommt aber nur leere eckige Klammer raus, warum? noch mal nachsehen, offenbar doch noch nicht ganz verstanden...
 
 // oder so:
 let concatHollywoodActors: string[] = oldHollywoodActors.concat();
 console.log(concatHollywoodActors);
-// Wert ändern in Kopie:
-concatHollywoodActors.unshift("")
-
+// Wert ändern in Kopie, hier mit unshift:
+concatHollywoodActors.unshift("Fred Astaire");
+console.log(concatHollywoodActors);
 
 // Kopieren mit slice
 let sliceHollywoodActors: string[] = oldHollywoodActors.slice(0, 7); 
 console.log(sliceHollywoodActors);
+// Wert ändern in Kopie, hier mit push:
+sliceHollywoodActors.push("Rita Hayworth");
+console.log(sliceHollywoodActors);
+
 
 // Kopie mit dem Spread-Operator
 let spreadHollywoodActors: string[] = [...oldHollywoodActors];
 console.log(spreadHollywoodActors);
-// Reminder!!! Hier tippe ich drei einzelne Punkte, den Shortcut für Dreipunkt (command .) nimmt er nicht
+//  Feststellung. Hier tippe ich drei einzelne Punkte, den richtigen Shortcut für Dreipunkt (command .) nimmt er hier nicht
+// Wert ändern in Kopie, hier mit pop:
+spreadHollywoodActors.pop();
+console.log(spreadHollywoodActors);
+
+
 
 
 
