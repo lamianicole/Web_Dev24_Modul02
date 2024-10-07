@@ -13,8 +13,8 @@ const futuramaQuoteArrZwei = futuramaQuote.split(" ");
 console.log(futuramaQuoteArrZwei);
 // (51) ["It's", 'okay,', 'Bender.', 'I', 'like', 'cooking', 'too.', 'Oh,', "you're", 'a', 'dollar', 'naughtier', 'than', 'most.', 'My', 'fellow', 'Earthicans,', 'as', 'I', 'have', 'explained', 'in', 'my', 'book', "'Earth", 'in', 'the', "Balance',", 'and', 'the', 'much', 'more', 'popular', "'Harry", 'Potter', 'and', 'the', 'Balance', 'of', "Earth',", 'we', 'need', 'to', 'defend', 'our', 'planet', 'against', 'pollution.', 'Also', 'dark', 'wizards.']
 
-const futuramaQuuoteArrDrei = futuramaQuote.split("");
-console.log(futuramaQuuoteArrDrei);
+const futuramaQuoteArrDrei = futuramaQuote.split("");
+console.log(futuramaQuoteArrDrei);
 // (290) ['I', 't', "'", 's', ' ', 'o', 'k', 'a', 'y', ',', ' ', 'B', 'e', 'n', 'd', 'e', 'r', '.', ' ', 'I', ' ', 'l', 'i', 'k', 'e', ' ', 'c', 'o', 'o', 'k', 'i', 'n', 'g', ' ', 't', 'o', 'o', '.', ' ', 'O', 'h', ',', ' ', 'y', 'o', 'u', "'", 'r', 'e', ' ', 'a', ' ', 'd', 'o', 'l', 'l', 'a', 'r', ' ', 'n', 'a', 'u', 'g', 'h', 't', 'i', 'e', 'r', ' ', 't', 'h', 'a', 'n', ' ', 'm', 'o', 's', 't', '.', ' ', 'M', 'y', ' ', 'f', 'e', 'l', 'l', 'o', 'w', ' ', 'E', 'a', 'r', 't', 'h', 'i', 'c', 'a', 'n', 's', …]
 
 
