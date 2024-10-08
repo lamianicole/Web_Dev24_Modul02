@@ -72,7 +72,7 @@ console.log(fahrenheit);
 
 const fahrenheitCelsius = fahrenheit.map((temperature) => {
     const celsius: number = (temperature - 32) / 1.8;
-    return celsius;
+    return celsius.toFixed(0);
 });
 
 console.log(fahrenheitCelsius);
