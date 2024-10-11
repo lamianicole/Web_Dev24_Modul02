@@ -52,6 +52,7 @@ calculateSum(83);
 
 // Level-1_10
 function getHighestNumber(numbers: number[]): number {
+    // : number bedeutet, nur number wird zurückgegeben
     let highestNumber: number = numbers[0]; 
     for (let i: number = 1; i < numbers.length; i++){
         if(numbers[i]> highestNumber){
