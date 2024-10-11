@@ -48,3 +48,17 @@ const calculateSum = (maxNumber: number) => {
     console.log(sum);
 };
 calculateSum(83);
+
+
+// Level-1_10
+function getHighestNumber(numbers: number[]): number {
+    let highestNumber: number = numbers[0]; 
+    for (let i: number = 1; i < numbers.length; i++){
+        if(numbers[i]> highestNumber){
+            highestNumber = numbers[i]
+        }
+    }
+    return highestNumber
+}
+console.log(getHighestNumber);
+// Ruft die Funktion mit Beispiel-Array auf und gibt das Ergebnis auf der Konsole aus.Funktion durchsucht das Array nach der höchsten Zahl und gibt diese zurück
