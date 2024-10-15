@@ -59,7 +59,7 @@ console.log(meineTopVier[3].formate[2]);
 console.log(meineTopVier[3].title.substring(17,21));
 
 // ein neues Objekt vom Typ Musik anlegen... und füge es zum Array hinzu.
-let neuesAlbum: Musik = {
+const neuesAlbum: Musik = {
     kunstler: 'Ruger Hauer/Paperi T',
     title: 'Täällä (Live)',
     release_jahr: 2011,
@@ -71,4 +71,23 @@ meineTopVier.push(neuesAlbum);
 console.log(meineTopVier);
 
 
+
+// Aufgabe Level 1_7
+// Gib folgende Werte mit forEach() pro Objekt folgende Werte im HTML aus:
+    // - kunstler
+    // - title
+    // - formate
+const musicData = document.querySelector('#musicData') as HTMLElement;
+
+meineTopVier.forEach((elt) => {
+    musicData.innerHTML += `<div>
+    <p>${elt.kunstler}</p>
+    <p>${elt.title}</p>
+    <p>${elt.formate}</p>
+    <br>
+</div>
+`;
+})
+
+// Erinnerung: hier innerHTML, nicht textContent, denn damit wäre Ergebnis nicht richtig formatiert. Alles würde als Text dargestellt werden, und die HTML-Struktur (<div>, <p>, <br>) würde nicht berücksichtigt. Mit innerHTML dagegen schon  
 
