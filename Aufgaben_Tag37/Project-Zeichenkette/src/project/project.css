@@ -1,0 +1,36 @@
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 4.5rem;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.eingabe, .eingabe-con, .ausgabe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+    color:darkblue
+}
+
+span{
+    color:rgb(61, 61, 150);
+}
+
+button{
+    background-color: rgb(35, 127, 213);
+    border-radius: 1.6rem;
+    border: 0.1rem, solid, white;
+    padding: 0.6rem;
+    color: white;
+}

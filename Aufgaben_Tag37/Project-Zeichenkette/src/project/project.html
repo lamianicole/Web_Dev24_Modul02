@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Zeichenkette</title>
+</head>
+<body>
+    <section class="eingabe">
+    <h1>Zeichen ketten trennungs maschine</h1>
+        <form>
+            <div class="eingabe-con">
+                <label>Zu trennende Zeichenkette
+            </div>
+            <div class="eingabe-con">
+                <input type="text" id="inputZkText"/>
+                </label>
+            </div>
+            <div class="eingabe-con">
+                <label>Trennen bei Zeichenkette
+            </div>
+            <div class="eingabe-con">
+                <input type="text" id="inputZkChar"/>
+                </label>
+            </div>
+            <div class="radio-con"> 
+                <label>
+                <input type="radio" name="auswahl" checked id="davorRadioBtn"/>
+                <span>davor</span> trennen
+                </label>
+            
+                <label>
+                <input type="radio" name="auswahl" id="danachRadioBtn"/>
+                <span>danach</span> trennen
+                </label>
+                <button type="button">Hier klicken</button>
+            </div>
+        </form>
+    </section>
+    <section class="ausgabe">
+        <h2>Ausgabe</h2>
+        <h3><span>Vorderer</span> Teil</h3>
+        <p id="outputDavor"></p>
+        <h3><span>Hinterer</span> Teil</h3>
+        <p id="outputDanach"></p>
+    </section>
+
+    <script type="module" src="./project.ts"></script>
+</body>
+</html>
