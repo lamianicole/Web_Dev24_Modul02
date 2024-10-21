@@ -59,15 +59,15 @@ const caesarDecrypt = (input: string, key: number): string => {
 };
 
 encodeBtn.addEventListener('click', () => {
-    const alphabetArray = inputText.value;
+    const text = inputText.value;
     const key = Number(inputNumber.value);
-    output.textContent = `Encoded: ${caesarEncrypt(alphabetArray, key)}`;
+    output.textContent = `Encoded: ${caesarEncrypt(text, key)}`;
 });
 
 decodeBtn.addEventListener('click', () => {
-    const alphabetArray = inputText.value;
+    const text = inputText.value;
     const key = Number(inputNumber.value);
-    output.textContent = `Decoded: ${caesarDecrypt(alphabetArray, key)}`;
+    output.textContent = `Decoded: ${caesarDecrypt(text, key)}`;
 });
 
 
