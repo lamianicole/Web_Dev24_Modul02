@@ -4,12 +4,6 @@ const countSpacesBtn = document.querySelector ('#countSpacesBtn') as HTMLButtonE
 const countVowelsBtn = document.querySelector ('#countVowelsBtn') as HTMLButtonElement;
 const output = document.querySelector ('#output');
 
-console.log(inputText);
-console.log(countCapLettersBtn);
-console.log(countSpacesBtn);
-console.log(countVowelsBtn);
-console.log(output);
-
 // function count capital letters
 const getCapLetters = (): number => {
     const inputTextUser = inputText.value;
