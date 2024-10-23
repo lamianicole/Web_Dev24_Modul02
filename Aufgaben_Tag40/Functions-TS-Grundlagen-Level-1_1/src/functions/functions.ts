@@ -181,11 +181,68 @@ console.log(createMonster("Huwawa", "gilgameshEpic", 90, 54));
 console.log(createMonster("Frankenhooker", "blackComedyHorror", 90, 450, 700));
 
 
-Aufgabe 
+// Aufgabe Level 2_2
+const inputFirstName = document.querySelector("#inputFirstName") as HTMLInputElement;
+const inputLastName = document.querySelector("#inputLastName") as HTMLInputElement;
+const inputEmail = document.querySelector("#inputEmail") as HTMLInputElement;
+const inputPhone = document.querySelector("#inputPhone") as HTMLInputElement;
+const button = document.querySelector("button") as HTMLButtonElement; 
+const output = document.querySelector("#output") as HTMLElement; 
 
+// Lege einen Typ NewCustomer an
+type TNewCustomer = {
+    firstName: string,
+    lastName: string,
+    email?: string,
+    phone?: string
+}
 
+// Leg 2 Funktionen an, die jeweils das gleiche Ergebnis liefern, einen Begrüßungstext als String zurückgeben
+// greetNewUser1 mit einem Parameter vom Typ NewCustomer
+// greetNewUser2 mit 4 Parametern (firstName, lastName, email, phone)
+function greetNewUser1(customer: TNewCustomer) {
+    if (customer.email && customer.phone) {
+        return `Hello ${customer.firstName} ${customer.lastName}. We will contact you via ${customer.email} and ${customer.phone}`;
+    } else if (customer.email) {
+        return `Hello ${customer.firstName} ${customer.lastName}. We will contact you via ${customer.email}`;
+    } else if (customer.phone) {
+        return `Hello ${customer.firstName} ${customer.lastName}. We will contact you via ${customer.phone}`;
+    } else {
+        return `Hello ${customer.firstName} ${customer.lastName}. We will not contact you`;
+    }
+}
 
+function greetNewUser2(
+    firstName: string,
+    lastName: string,
+    email?: string,
+    phone?: string
+): string {
+    if (email && phone) {
+        return `Hello ${firstName} ${lastName}. We will contact you via ${email} and ${phone}`;
+    } else if (email) {
+        return `Hello ${firstName} ${lastName}. We will contact you via ${email}`;
+    } else if (phone) {
+        return `Hello ${firstName} ${lastName}. We will contact you via ${phone}`;
+    } else {
+        return `Hello ${firstName} ${lastName}. We will not contact you`;
+    }
+}
+// mit Hilfe
+button.addEventListener('click', () => {
+    const firstName = document.querySelector('#firstName') as HTMLInputElement;
+    const lastName = document.querySelector('#lastName') as HTMLInputElement;
+    const email = document.querySelector('#email') as HTMLInputElement;
+    const phone = document.querySelector('#phone') as HTMLInputElement;
+    const output = document.querySelector('#output') as HTMLElement;
+    
+    const newCustomer: TNewCustomer = {
+        firstName: firstName.value,
+        lastName: lastName.value,
+        email: email.value,
+        phone: phone.value
+    }
 
-
-
-
+    console.log(greetNewUser1(newCustomer));
+    output.innerHTML = greetNewUser2(firstName.value, lastName.value, email.value, phone.value);
+})
