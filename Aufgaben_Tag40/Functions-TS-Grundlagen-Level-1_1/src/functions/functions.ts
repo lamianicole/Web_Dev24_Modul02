@@ -111,46 +111,78 @@
 // Aufgabe This-TS-Level-1_2
 // wir brauchen hier return, weil wir es im HTML ausgeben wollen!
 
-const person = {
-    vorname: 'Anton',
-    nachname: 'Fish',
-    alter: 34,
-    familienstand: 'ledig',
-    groesse: 1.78,
-    zeigeProfil: function () {
-        return `
-        <p>Vorname: ${this.vorname}</p>
-        <p>Nachname: ${this.nachname}</p>
-        <p>Alter: ${this.alter} Jahre</p>
-        <p>Familienstand: ${this.familienstand}</p>
-        <p>Größe ${this.groesse} cm</p>`;
-    }
-};
+// const person = {
+//     vorname: 'Anton',
+//     nachname: 'Fish',
+//     alter: 34,
+//     familienstand: 'ledig',
+//     groesse: 1.78,
+//     zeigeProfil: function () {
+//         return `
+//         <p>Vorname: ${this.vorname}</p>
+//         <p>Nachname: ${this.nachname}</p>
+//         <p>Alter: ${this.alter} Jahre</p>
+//         <p>Familienstand: ${this.familienstand}</p>
+//         <p>Größe ${this.groesse} cm</p>`;
+//     }
+// };
 
-document.getElementById("person").innerHTML = person.zeigeProfil();
+// document.getElementById("person").innerHTML = person.zeigeProfil();
 
 
-const personZwei = {
-    vorname: 'Max',
-    nachname: 'Mustermann',
-    alter: 45,
-    familienstand: 'ledig',
-    groesse: 1.82,
-    zeigeProfilZwei: () => {
-        return `
-        <p>Vorname: ${personZwei.vorname}</p>
-        <p>Nachname: ${personZwei.nachname}</p>
-        <p>Alter: ${personZwei.alter} Jahre</p>
-        <p>Familienstand: ${personZwei.familienstand}</p>
-        <p>Größe ${personZwei.groesse} cm</p>`;
-    }
-};
+// const personZwei = {
+//     vorname: 'Max',
+//     nachname: 'Mustermann',
+//     alter: 45,
+//     familienstand: 'ledig',
+//     groesse: 1.82,
+//     zeigeProfilZwei: () => {
+//         return `
+//         <p>Vorname: ${personZwei.vorname}</p>
+//         <p>Nachname: ${personZwei.nachname}</p>
+//         <p>Alter: ${personZwei.alter} Jahre</p>
+//         <p>Familienstand: ${personZwei.familienstand}</p>
+//         <p>Größe ${personZwei.groesse} cm</p>`;
+//     }
+// };
 
-document.getElementById("personZwei").innerHTML = personZwei.zeigeProfilZwei();
+// document.getElementById("personZwei").innerHTML = personZwei.zeigeProfilZwei();
 
 
 
 // Aufgabe Functions-TS-Level-1_6
+// Leg einen Typ Monster an. Alle Eigenschaften sind Pflicht
+type TMonster = {
+    name: string,
+    type: string,
+    health: number,
+    strength: number,
+    speed: number
+    };
+
+// Erstelle eine Funktion createMonster, die ein Monster erzeugt und zurückgibt
+// name und type müssen immer an die Funktion übergeben werden
+// Werden health, strength und speed nicht angegeben, sollen diese Standardwerte verwendet werden: health = 100, strength = 50, speed = 25
+const createMonster = (name: string, type: string, health?: number, strength?: number, speed?: number): TMonster => {
+        const Monster2: TMonster = {
+        name: name,
+        type: type,
+        health: health ?? 100,
+        strength: strength ?? 50,
+        speed: speed ?? 25,
+        };
+        return Monster2;
+    };
+
+// Leg mit Hilfe der Funktion mehrere Monster an, gib dabei 2-5 Parameter an
+console.log(createMonster("Hydra", "greekMyth"));
+console.log(createMonster("Fenrir", "nordicMyth", 180));
+console.log(createMonster("Huwawa", "gilgameshEpic", 90, 54));
+console.log(createMonster("Frankenhooker", "blackComedyHorror", 90, 450, 700));
+
+
+Aufgabe 
+
 
 
 
