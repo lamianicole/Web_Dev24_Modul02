@@ -11,13 +11,13 @@ constructor(name: string, price: number, isPopular: boolean, description?: strin
     this._description = description;
 }
 
-// Methode 1: 
+// Methode 1: Gesamtsumme an Eiskugeln 
 getTotalPrice(numberOfScoops: number){
     console.log(numberOfScoops * this._price);
 }
 
-// Methode 2:
-printInfo(){
+// Methode 2: gibt optionalen Beschreibungstext aus
+printInfo(): void{
     console.log(`Flavor ${this._name} is popular and costs ${this._price} Euro.`);  
 }
 

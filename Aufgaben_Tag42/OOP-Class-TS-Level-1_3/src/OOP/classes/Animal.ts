@@ -1,7 +1,9 @@
+// Level 1_3
+
 class Animal {
-    _species: string;
-    _age: number;
-    _color: string;
+    private _species: string;
+    private _age: number;
+    private _color: string;
 
     get species(): string {
         return this._species;
