@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./basics.css">
+    <title>Zoo-Verwaltung</title>
+</head>
+<body>
+    <h1>Zoo</h1>
+    <div id="mainSection">
+        <section>
+            <h2>Add Animal</h2>
+            <form id="animal-form">
+                <label for="animalType">Animal Type:</label>
+                <select id="animalType">
+                </select>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="yearOfBirth">Year of Birth:</label>
+                <input type="number" id="yearOfBirth" required min="1900" max="2024">
+
+                <label for="continentSelect">Continents:</label>
+                <select id="continentSelect">
+                </select>
+
+                <label for="specialNeedsSelect">Special Needs:</label>
+                <select id="specialNeedsSelect">
+                    <option value="Meat">Meat</option>
+                    <option value="Fish">Fish</option>
+                </select>
+
+                <label for="enclosureSelect">Enclosure:</label>
+                <select id="enclosureSelect">
+                </select>
+
+                <button type="submit">Create Animal</button>
+            </form>
+        </section>
+
+        <div id="gehege"></div>
+    </div>
+
+    <script type="module" src="./basics.ts"></script>
+</body>
+</html>
