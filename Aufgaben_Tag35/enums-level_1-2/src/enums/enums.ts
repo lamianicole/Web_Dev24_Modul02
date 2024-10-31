@@ -34,6 +34,8 @@ const PizzaLarge: Pizza = {
     size: PizzaSize.Large,
     ingredients: [PizzaIngredients.Cheese, PizzaIngredients.Salami, PizzaIngredients.Jalapeno]
 };
+console.log(PizzaLarge);
+
 
 const PizzaFamilie: Pizza = {
     size: PizzaSize.Familie,

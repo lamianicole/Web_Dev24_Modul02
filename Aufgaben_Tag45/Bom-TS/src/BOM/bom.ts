@@ -70,8 +70,3 @@ const getBrowserData = () => {
 }
 
 getBrowserData()
-
-
-
-
-

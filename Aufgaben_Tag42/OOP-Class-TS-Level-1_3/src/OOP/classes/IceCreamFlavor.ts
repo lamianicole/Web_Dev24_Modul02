@@ -11,7 +11,8 @@ constructor(name: string, price: number, isPopular: boolean, description?: strin
     this._description = description;
 }
 
-// Methode 1: Gesamtsumme an Eiskugeln 
+// Methode 1: Gesamtsumme an Eiskugeln
+// diese anpassen an Farids Variante: wir brauchen return wert statt console.log, weil wir mit dem Wert noch weiterarbeiten (später mit den Karten, number ergänzen!)
 getTotalPrice(numberOfScoops: number){
     console.log(numberOfScoops * this._price);
 }
@@ -20,6 +21,7 @@ getTotalPrice(numberOfScoops: number){
 printInfo(): void{
     console.log(`Flavor ${this._name} is popular and costs ${this._price} Euro.`);  
 }
+// Farids Variante mit ternary operator beachten: is popular
 
 // Methode 3:
 // gib die Textlänge von description aus oder 0, wenn die Eigenschaft nicht gesetzt ist (description ist hier optional)
@@ -32,5 +34,14 @@ getLengthOfDescription(){
     }
     }
 }
+
+// Farids Variante: 
+// getLengthOfDescription(){
+    if (this._desc) {
+        console.log(this._desc.length);
+    } else {
+
+    }
+
 
 export default IceCreamFlavor

@@ -49,7 +49,7 @@ set address (value:string) {
 
 set postalCode (value:string) {
     if (value.length === 5 && Number(value) >= 0 && Number(value) <= 99999) {
-         this._postalCode = value;
+        this._postalCode = value;
     } else {
         console.error("Incorrect input. Your zip code must contain 5 digits between 00000 and 99999")
     }

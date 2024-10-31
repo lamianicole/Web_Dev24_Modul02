@@ -35,6 +35,8 @@ whiteChocolate.getLengthOfDescription();
 watermelon.getLengthOfDescription(); 
 
 // Level 1_12 Bonus fehlt
+// alle Eissorten in einem Array speichern:
+const iceCreamSorten
 
 
 // Level 1_13
@@ -47,3 +49,17 @@ console.log(randonCustomerWoman);
 const randomCustomerMan = new Customer("Joe", "joe@mail.com", "joe street", "12123", "joe town") 
 console.log(randomCustomerMan);
 
+
+// Bonusteil:
+const section = document.createElement("section") as HTMLDivElement
+
+iceCreamSorten.forEach((ice: IceCreamFlavor) => {
+    console.log(ice);
+    const divElement =
+    
+})
+
+// bei & Price brauchen wir toString, denn TextContent erwartet string und den price hatten wir als number angegeben, deshalb muss es angepasst werden mit toString
+// Dafür wurde vorher die Variable scoopsAnzahl gebildet, weil wir toString nicht einfach an eine number anhängen können, Variable ist sozusagen Tüte, darin wird number getan
+
+// divElement = Eltern: holen kind ab (appendChild), welches Kind?: steht in Klammern dahinter: 

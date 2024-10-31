@@ -1,3 +1,4 @@
+// Level 2_1
 // Schreibe eine Function, die beim Anklicken des “Change me” Buttons den Home Button ändert.
 
 const navChange = document.getElementById('navChange') as HTMLAnchorElement;
