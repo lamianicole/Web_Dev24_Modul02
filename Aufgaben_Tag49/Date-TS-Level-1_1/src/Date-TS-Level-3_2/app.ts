@@ -14,7 +14,7 @@ console.log(`time in seconds: `, showPastSeconds);
 
 
 // Variable Geburtstag
-const myBirthday = new Date("1983-12-17");
+const myBirthday = new Date("1983-12-17 04:02:04");
 
 const ageNow = differenceInYears(currentDate, myBirthday);
 
