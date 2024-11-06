@@ -1,20 +1,22 @@
 const greetUser = (): void => {
     try {
     const userName = window.prompt("Bitte gib deinen Benutzernamen ein"); 
-    if (userName === null) { 
+    if (!userName || userName.length === 0) { 
         throw new Error ("Es wurde kein Benutzername eingegeben");
     }
     console.log(`Willkommen ${userName}`);
+    // catch (err): err ist der Parameter, der gezogen wird von der throw new Error Zeile, also Platzhalter für den Text: "Es wurde kein Benutzername eingegeben". Der catch fängt den error/catch, der wird aber erst bei console.log aufgerufen bzw. bei console.error(err). Unterschied: console.log zeigt es in der Konsole, bei console.error wird es in der Konsole rot hinterlegt und wird sichtbarer als Fehlermeldung
     } catch (err) {
-    console.log("Schönen Tag");
+        const divElement = document.createElement("div") as HTMLDivElement;
+        divElement.textContent = err;
+        document.body.appendChild(divElement);
+    console.error(err);
     }
 };
 
 greetUser();
-// Frage zum Code: Wenn ich keinen Namen eingebe und OK drücke, kommt: "Willkommen" (ohne userName).
-// Ich hätte hier aber "Es wurde kein Benutzername eingegeben" erwartet, was stimmt nicht? Oder soll es gar nicht angezeigt werden? (weil kein console-log, sondern throw new Error? Es ist also nur intern für mich der Name des Fehlers?)
-// Wenn ich auf Abbrechen klicke (mit oder ohne userName), kommt: "Schönen Tag"
-//  Muss noch eine finally-Zeile rein? Aufgabe irgendwie doch nicht so klar
+
+
 
 
 // Code-Erklärung für eigenes Verständnis:
