@@ -1,14 +1,12 @@
-const BASE_URL = "https://picsum.photos/v2/";
-const LIST_URL = BASE_URL + "list";
-async function fetchPhotosFromPicsum(url: string) {
-    try {
-        const response = await fetch(url);
+const URL = 'https://picsum.photos/v2/list';
 
-        const result = await response.json();
+async function fetchPicsum() {
+    try {
+        const fetchData = await fetch(URL);
+        const result = await fetchData.json();
         console.log(result);
-    } catch (error) {
-    console.error(error);
+    } catch(error) {
+        console.error(error);
     }
 }
-fetchPhotosFromPicsum(LIST_URL);
-
+fetchPicsum();
