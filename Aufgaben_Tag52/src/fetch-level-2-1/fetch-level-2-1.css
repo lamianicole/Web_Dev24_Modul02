@@ -1,0 +1,23 @@
+h1 {
+    color: blue;
+}
+
+img {
+    width: 50%;
+    border: 1px solid green;
+    height: auto; 
+    border-radius: 5px;
+}
+
+figure { 
+    margin: 20px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    text-align: center; 
+}
+
+figcaption { margin-top: 10px; 
+    font-size: 1.2em; 
+    color: #333; 
+}
